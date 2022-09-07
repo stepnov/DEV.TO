@@ -1,0 +1,78 @@
+table {
+  @apply w-full;
+}
+
+thead {
+  @apply hidden lg:table-header-group;
+}
+
+tr {
+  @apply max-w-full block relative border-b-4 border-gray-100
+  lg:table-row lg:border-b-0 dark:border-gray-800;
+}
+
+tr:last-child {
+  @apply border-b-0;
+}
+
+td:not(:first-child) {
+  @apply lg:border-t-0 lg:border-r-0 lg:border-b-0 lg:border-gray-100 lg:dark:border-slate-700;
+}
+
+th {
+  @apply lg:text-left lg:p-3 border-b;
+}
+
+th.sortable:hover {
+  cursor: pointer;
+}
+
+th.sortable {
+  position: relative;
+}
+
+th.sortable:before {
+  font-family: "Material Design Icons";
+  position: absolute;
+  right: 3px;
+  font-size: 1rem;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+th.sortable.asc:before {
+  content: '\F04BC';
+}
+
+th.sortable.desc:before {
+  content: '\F04BD';
+}
+
+td {
+  @apply flex justify-between text-right py-3 px-4 align-top
+  lg:table-cell lg:text-left lg:p-3 lg:align-middle lg:border-b-0 dark:border-gray-800;
+}
+
+td:last-child {
+  @apply border-b-0;
+}
+
+tbody tr, tbody tr:nth-child(odd) {
+  @apply lg:hover:bg-pavitra-300/70;
+}
+
+tbody tr:nth-child(even) {
+  @apply lg:bg-pavitra-300;
+}
+
+td:before {
+  content: attr(data-label);
+  @apply font-semibold pr-3 text-left lg:hidden;
+}
+
+tbody tr td {
+  @apply text-sm font-normal text-pavitra-900;
+}

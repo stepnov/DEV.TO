@@ -1,0 +1,15 @@
+@import "tailwind/_base.css";
+@import "tailwind/_components.css";
+@import "tailwind/_utilities.css";
+@import "vue-select/dist/vue-select.css";
+
+@import "_v-select.css";
+@import "_checkbox-radio-switch.css";
+@import "@mdi/font/css/materialdesignicons.min.css";
+
+@import "_app.css";
+@import "_scrollbars.css";
+@import "_progress.css";
+@import "_table.css";
+@import "_helper.css";
+@import "_theme.css";

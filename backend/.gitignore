@@ -1,0 +1,14 @@
+.DS_Store
+
+# intellij files
+.idea
+*.iml
+
+# Project exclude paths
+/node_modules/
+
+# Build directory
+dist
+
+# env files
+.env.local
